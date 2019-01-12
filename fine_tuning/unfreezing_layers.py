@@ -127,3 +127,19 @@ print(f'{total_params:,} total parameters.')
 total_trainable_params = sum(
     p.numel() for p in model.parameters() if p.requires_grad)
 print(f'{total_trainable_params:,} training parameters.')
+
+
+### Adding learning rates for each denseblock/layer
+### example on DenseNet161
+optimizer = optim.Adam(
+    [
+        dict(params=model.features.conv0.parameters(), lr=0.00001),
+        dict(params=model.features.norm0.parameters(), lr=0.00001),
+        dict(params=model.features.relu0.parameters(), lr=0.00001),
+        dict(params=model.features.pool0.parameters(), lr=0.00001),
+        dict(params=model.features.denseblock1.parameters(), lr=0.00001),
+        dict(params=model.features.denseblock2.parameters(), lr=0.0001),
+        dict(params=model.features.denseblock3.parameters(), lr=0.0001),
+        dict(params=model.features.denseblock4.parameters(), lr=0.001),
+        dict(params=model.classifier.parameters(), lr=0.01)    
+    ])
