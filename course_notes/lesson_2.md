@@ -3,12 +3,13 @@
 This lesson sets the theoretical foundations for the upcoming lessons.
 
 ### Table of Contents
-- Linear Boundaries
-- Higher dimensions
-- Perceptron
-	- Neural Networks
-	- Perceptrons as Logical Operators
-	- Perceptron Trick
+- [Linear Boundaries](#linear-boundaries)
+- [Higher dimensions](#higher-dimension)
+- [Perceptron](#perceptron)
+	- [Neural Networks](#neural-networks)
+	- [Perceptrons as Logical Operators](#perceptrons-as-logical-operators)
+	- [Perceptron Trick](#perceptron-trick)
+	- [Perceptron Algorithm](#perceptron-algorithm)
 
 
 ### Linear Boundaries
@@ -104,5 +105,23 @@ Let's sort this out:
 
 #### Perceptron Trick
 
+Imagine that we have a plot with points classified as blue and red depending on which area they are found in as in the image below. But there are there two points that look as if they don't belong. Let's assume that our perceptron wasn't adjusted well enough in order to correctly the points. What can we do is make the line of the equation change, the only way we can classify correctly those points is if the line came closer to the misclassifed point eventually going over them. 
 
+![Misclassifed points](images/split_data_points.png)
+
+In order to grasp the math behind how the line actually moves, let's focus on an example where we have a misclassifed point. The point is telling the line to come closer. The way it works is that we can use the value of the points to subtract from the parameters of the line.
+
+![Perceptron Trick](images/perceptron_trick_addition.png)
+
+Will this solve all of our problems? We have to be careful in this case because if we drastically alter the parameters of the equation we might end up misclassifying other points. Our goal is to make the line make small steps towards the point. Enter **learning rate**.
+
+![Learning rate](images/perceptron_trick_lr_positive.png)
+
+_Note_: Depending on where the misclassified point is located we'll have to add or subtract.
+
+![Learning rate](images/perceptron_trick_lr_negative.png)
+
+What we can do with the learning rate is multiply with the points coordinates thus resulting a line equation with different parameters. The way you can think about it is a sort of factor that helps you move the position of the line. This can be applied to any of our points. Essentially, the parameters and the bias determine where the line of the equation is drawn. This is what is called as the **Perceptron Trick**. 
+
+#### Perceptron Algorithm
 
