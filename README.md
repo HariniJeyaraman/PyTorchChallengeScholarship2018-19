@@ -2,7 +2,11 @@
 
 ![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
 
-The goal of this repo is to gather all the resources that I've used for this course.
+I created this repository in order to all the resources that I've used for the PyTorch Scholarship Challenge. I found out about the opportunity of applying for a Udacity scholarship through their social media and website.
+
+If you're curious you can check the old website [FAQ](https://sites.google.com/udacity.com/pytorch-scholarship-facebook/phase-1-archived/faqs-archived), meanwhile the course itself can be found on Udacity as [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188).
+
+I managed to write a [blog post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-challenge.html) about my experience of taking the challenge.
 
 ## Table of Contents
 - [Course notes](course_notes/course_notes.md)

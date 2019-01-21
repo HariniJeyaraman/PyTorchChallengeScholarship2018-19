@@ -10,6 +10,9 @@ This lesson sets the theoretical foundations for the upcoming lessons.
 	- [Perceptrons as Logical Operators](#perceptrons-as-logical-operators)
 	- [Perceptron Trick](#perceptron-trick)
 	- [Perceptron Algorithm](#perceptron-algorithm)
+- [Non-Linear Regions](#non-linear-region)
+- [Error Functions](#error-functions)
+	- [Log-loss error function](log-loss-error-function)
 
 
 ### Linear Boundaries
@@ -105,7 +108,7 @@ Let's sort this out:
 
 #### Perceptron Trick
 
-Imagine that we have a plot with points classified as blue and red depending on which area they are found in as in the image below. But there are there two points that look as if they don't belong. Let's assume that our perceptron wasn't adjusted well enough in order to correctly the points. What can we do is make the line of the equation change, the only way we can classify correctly those points is if the line came closer to the misclassifed point eventually going over them. 
+Imagine that we have a plot with points classified as blue and red depending on which area they are found in as in the image below. But there are there two points that look as if they don't belong. *How do we know if a point is misclassifed? If you carefully look at the color of the point (label) you can notice that they are not in correct area (color)*. Let's assume that our perceptron wasn't adjusted well enough in order to correctly the points. What can we do is make the line of the equation change, the only way we can classify correctly those points is if the line came closer to the misclassifed point eventually going over them. 
 
 ![Misclassifed points](images/split_data_points.png)
 
@@ -124,4 +127,53 @@ _Note_: Depending on where the misclassified point is located we'll have to add 
 What we can do with the learning rate is multiply with the points coordinates thus resulting a line equation with different parameters. The way you can think about it is a sort of factor that helps you move the position of the line. This can be applied to any of our points. Essentially, the parameters and the bias determine where the line of the equation is drawn. This is what is called as the **Perceptron Trick**. 
 
 #### Perceptron Algorithm
+
+We learned how the perceptron trick works conceptually and mathematically, the next goal is to learn how to implement it. 
+
+The algorithm works this way.
+```
+1. Start with random initialized weights: w1, ... wn, b
+2. For every misclassified point
+	2.1. If point = 0 
+		For i = 1...n
+			Change wi + a*xi
+		Change b to b+a
+	2.2. If point = 1
+		For i = 1...n
+			Change wi - a*xi
+		Change b to b-a
+	Repeat until we have no errors
+```
+
+An implementation of the [perceptron](algorithms/perceptron.py) algorithm.
+
+### Non-Linear Regions
+
+Until now the examples we encountered had a pretty good distinction between the blue and red points. What if we receive additional scores that are different from what we got so far. 
+
+In the image below we can noticed that our points can't be separated so well by a straight line. What do we do? Unfortunately, the perceptron algorithm will not work this time so in order to obtain for example a curved line our equation will have to be more complex. 
+
+[Non-Linear regions](images/non_linear_regions.png)
+
+### Error Functions
+
+A solution to the problem of creating a better line is going to be approached by an error function. What this means is such a function given an input is going to tell us how close the line is from the misclassified point. 
+
+Error function = Distance, how far we are from the solution.
+
+#### Log-loss Error function
+
+In the course, the concept of an error function is explained by a mountain descent. Remember our goal is to minimize the error by this if you could imagine a hiker trying to descend a mountain and it's looking for the best path.  
+
+Error tells us how far we are from the solution, in order to achieve that our error function is going to take small steps in terms of moving the line closer to the misclassified point. Broadly speaking, you could think that we are counting the number of errors and then our function (using derivatives) is taking small steps (depending on the learning rate) towards getting closer to the point, achieving the minimum solution. 
+
+Until we get to the best solution, we might get stuck into a "valley" or better know as *local minima* which gives us the smallest error locally. This is not necessarily a bad thing but we can certainly do better.
+
+In order for our function to work properly we have to be sure of two things:
+- our function can only be continous
+- our function also has to be differentiable. 
+
+Regarding the first point, it is the case that in order to reduce the error our function has to know in which direction to go thus it is necessary that the function be continous in order to pickup the variations even if they are very small, otherwise all directions would essentially have the same value. As for the second aspect, we are going to see why it has to be differentiable later.
+
+[Function discrete vs continous](images/error_function_discrete_continous.png)
 
