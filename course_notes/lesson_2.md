@@ -153,7 +153,7 @@ Until now the examples we encountered had a pretty good distinction between the 
 
 In the image below we can noticed that our points can't be separated so well by a straight line. What do we do? Unfortunately, the perceptron algorithm will not work this time so in order to obtain for example a curved line our equation will have to be more complex. 
 
-[Non-Linear regions](images/non_linear_regions.png)
+![Non-Linear regions](images/non_linear_regions.png)
 
 ### Error Functions
 
@@ -175,5 +175,5 @@ In order for our function to work properly we have to be sure of two things:
 
 Regarding the first point, it is the case that in order to reduce the error our function has to know in which direction to go thus it is necessary that the function be continous in order to pickup the variations even if they are very small, otherwise all directions would essentially have the same value. As for the second aspect, we are going to see why it has to be differentiable later.
 
-[Function discrete vs continous](images/error_function_discrete_continous.png)
+![Function discrete vs continous](images/error_function_discrete_continous.png)
 

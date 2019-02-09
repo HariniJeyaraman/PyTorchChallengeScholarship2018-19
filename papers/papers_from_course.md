@@ -17,7 +17,7 @@
 [Understanding deep learning requires rethinking generalization](https://arxiv.org/abs/1611.03530)
 
 ### Lesson 5.42
-[Visualizing and Understanding Convolutional Networks](https://arxiv.org/abs/1311.2901)
+[Visualizing and Understanding Convolutional Networks](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf)
 
 ## Lesson 6: Style Transfer
 

@@ -1,6 +1,6 @@
 ## Interesting papers
 
-All of these papers have been collected randomly either from Slack or by simply chance.
+All of these papers have been collected randomly either from Slack workspace of the challenge or by curiosity.
 
 | Title | Code | Summary |
 |:-------:|:------:|:---_---:|
