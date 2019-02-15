@@ -1,6 +1,6 @@
 # PyTorch Challenge Scholarship 2018-19
 
-![PyTorch Scholarship](pytorch-acceptance-badge.png)
+![PyTorch Scholarship](pytorch-acceptance-badge.png =200x100)
 
 I created this repository in order to all the resources that I've used for the PyTorch Scholarship Challenge. I found out about the opportunity of applying for a Udacity scholarship through their social media and website.
 
@@ -23,4 +23,4 @@ I wrote a [post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-c
 - [Where to go next](where_to_go_next.md)
 
 
-#### I've gathered these resources during and a shortwhile after completing the challenge. While it's not complete it should give you some indication as to I studied during those two months. I'm currently in the process of revising and cleaning up my notes.
+I've gathered these resources during and a shortwhile after completing the challenge. While it's not complete it should give you some indication as to I studied during those two months. I'm currently in the process of revising and cleaning up my notes.
