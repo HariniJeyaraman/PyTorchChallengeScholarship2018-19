@@ -1,6 +1,8 @@
 # PyTorch Challenge Scholarship 2018-19
 
-![PyTorch Scholarship](pytorch-acceptance-badge.png =200x100)
+<p align="center">
+	<img src="https://github.com/masterflorin/PyTorchChallengeScholarship2018-19/blob/master/pytorch-acceptance-badge.png" width="200" height="200">
+</p>
 
 I created this repository in order to all the resources that I've used for the PyTorch Scholarship Challenge. I found out about the opportunity of applying for a Udacity scholarship through their social media and website.
 
@@ -16,8 +18,9 @@ I wrote a [post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-c
 - [Algorithms from the course](algorithms/algorithms_notes.md)
 - [Fine-tuning ](fine_tuning/fine_tuning.md)
 - [Papers and resources from the course](papers/papers_from_course.md)
-- [Interesting papers](papers/interesting_papers.md)
-- Published materials
+	- [Interesting papers](papers/interesting_papers.md)
+- [Final lab challenge](lab_challenge/)
+- [Published materials]()
 	- [Why use a pre-trained model rather than creating your own?](https://medium.com/udacity-pytorch-challengers/why-use-a-pre-trained-model-rather-than-creating-your-own-d0e3a17e202f)
 	- [Ideas on how to fine-tune a pre-trained model in PyTorch](https://medium.com/udacity-pytorch-challengers/ideas-on-how-to-fine-tune-a-pre-trained-model-in-pytorch-184c47185a20)
 - [Where to go next](where_to_go_next.md)
