@@ -14,7 +14,6 @@ If you're curious you can check the official website and [FAQ](https://sites.goo
 
 I wrote a [post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-challenge.html) on my blog about the experience of taking the challenge.
 
-
 ## Table of Contents
 - [Course notes](course_notes/course_notes.md)
 - [Algorithms from the course](algorithms/algorithms_notes.md)
@@ -26,6 +25,16 @@ I wrote a [post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-c
 	- [Why use a pre-trained model rather than creating your own?](https://medium.com/udacity-pytorch-challengers/why-use-a-pre-trained-model-rather-than-creating-your-own-d0e3a17e202f)
 	- [Ideas on how to fine-tune a pre-trained model in PyTorch](https://medium.com/udacity-pytorch-challengers/ideas-on-how-to-fine-tune-a-pre-trained-model-in-pytorch-184c47185a20)
 - [Where to go next](where_to_go_next.md)
+
+## Disclaimer
+
+Throughout this repo I have made use of Udacity course material, including screenshots of concepts from their videos. I would like to emphasize that I'm only using them for educational purposes due to their high quality and I'm not going to use them for profit or any commercial activity. Thank you!
+
+## TODO
+- [ ] Adjust image sizes
+- [ ] Add documentation files
+- [ ] Add link to projects repo
+- [ ] Create a project site for the repository
 
 ### Last note
 
