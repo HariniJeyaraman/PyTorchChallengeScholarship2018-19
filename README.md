@@ -33,8 +33,8 @@ Throughout this repo I have made use of Udacity course material, including scree
 ## TODO
 - [ ] Adjust image sizes
 - [ ] Add documentation files
-- [ ] Add link to projects repo
-- [ ] Create a project site for the repository
+- [x] Add link to projects repo
+- [x] Create a project site for the repository
 
 ### Last note
 
