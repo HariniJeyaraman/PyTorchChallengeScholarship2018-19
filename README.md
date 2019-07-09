@@ -6,7 +6,7 @@
 
 ## About
 
-I created this repository in order to all the resources that I've used for the PyTorch Scholarship Challenge. I found out about the opportunity of applying for a [Udacity scholarship](https://www.udacity.com/facebook-pytorch-scholarship) through their social media and website.
+I created this repository in order to store all the resources that I've used for the PyTorch Scholarship Challenge. I found out about the opportunity of applying for a [Udacity scholarship](https://www.udacity.com/facebook-pytorch-scholarship) through their social media and website.
 
 The Udacity PyTorch Scholarship Challenge took place between **9 November 2018 and 9 January 2019**.
 
@@ -26,14 +26,14 @@ I wrote a [post](https://masterflorin.github.io/2019/01/11/my-thoughts-pytorch-c
 	- [Ideas on how to fine-tune a pre-trained model in PyTorch](https://medium.com/udacity-pytorch-challengers/ideas-on-how-to-fine-tune-a-pre-trained-model-in-pytorch-184c47185a20)
 - [Where to go next](where_to_go_next.md)
 
+## Installation
+
+There several notebooks found in this repository so if you would like to run them without issues you can use the same setup as I did by installing the following [dependencies](https://github.com/udacity/deep-learning-v2-pytorch#dependencies).
+
 ## Disclaimer
 
-Throughout this repo I have made use of Udacity course material, including screenshots of concepts from their videos. I would like to emphasize that I'm only using them for educational purposes due to their high quality and I'm not going to use them for profit or any commercial activity. Thank you!
-
-## TODO
-- [ ] Adjust image sizes
-- [ ] Add documentation files
+Throughout this repository I have made use of Udacity course material, including screenshots of concepts from their videos. I would like to emphasize that I'm only using them for educational purposes due to their high quality and I'm not going to use them for profit or any commercial activity. Thank you!
 
 ### Last note
 
-I've gathered these resources during and a shortwhile after completing the challenge. While it's not complete it should give you some indication as to I studied during those two months. I'm currently in the process of revising and cleaning up my notes.
+The repository is not well polished as I've mostly started the work towards the end of the challenge. Moreover, I've continued to work on other projects as well but I still haven't given up hope that one day this will be finally done.

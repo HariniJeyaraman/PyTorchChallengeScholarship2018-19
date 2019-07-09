@@ -1,6 +1,6 @@
 ## Course notes
 
-This is the general page for course notes, from where you can select which lessons you want to review.
+This is the general page for course notes, from where you can select which lessons you want to read my notes. You will find them stored as Jupyter notebooks.
 
 All of the following course notes and pictures are taken from the Udacity [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188) course except the version that I took was different due to the final lab project.
 
